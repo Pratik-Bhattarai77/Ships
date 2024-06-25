@@ -9,7 +9,8 @@ export const  Home = () => {
     }
     return (
         <>
-        <Nav minimal={true}/>
+        <div className="overlay">
+        <Nav minimal={false} authToken={authToken}/>
         <div className="home">
 
             <h1>Sail your Ship</h1>
@@ -17,6 +18,8 @@ export const  Home = () => {
                 {authToken ? 'Sign out' : 'Sign up'}
             </button>
         </div>
+        </div>
         </>
     )
 }
+

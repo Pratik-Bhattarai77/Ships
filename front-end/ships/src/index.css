@@ -13,7 +13,7 @@ html{
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-size: 15px;
-  background: linear-gradient(to right, rgb(234, 0, 0), rgb(159, 97, 97));;
+  background: linear-gradient(to right, rgb(234, 0, 0), rgb(159, 97, 97));
   padding :12px 30px;
   border-radius: 30px;
   border: none;
@@ -26,3 +26,26 @@ body{
 }
 
 /* ----Navbar---- */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+nav .logo-container{
+  width: 170px;
+  margin: 15px;
+}
+
+nav .logo-container .logo{
+  width:100%;
+}
+
+/* home page */
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(to bottom, rgba(147, 147, 147, 0.8)0%, rgba(39, 39, 39, 0.8)100%); ;
+}
